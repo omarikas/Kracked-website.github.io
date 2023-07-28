@@ -32,7 +32,7 @@ var xh2 = new XMLHttpRequest();
     if (xh2.status == 200) {
       // redirect to a page
      var points=xh2.response
-     document.getElementById("mail").innerHTML+=` <li class="nav-item"><a class="nav-link" id="email" href="#">points:${points}</a></li>`
+     document.getElementById("mail").innerHTML+=` <li class="nav-item"><a class="nav-link"  href="#">points:${points}</a></li>`
 
     }}
 xh2.send()
