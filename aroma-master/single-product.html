@@ -197,7 +197,7 @@ document.getElementById('mail').innerHTML=`    <li class="nav-item"><a class="na
 							<button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) &amp;&amp; sst > 0 ) result.value--;return false;"
                class="reduced items-count" type="button"><i class="ti-angle-right"></i></button>
 							<a class="button primary-btn" onclick="  var xhr = new XMLHttpRequest();
-							xhr.open('GET', `http://localhost:3000/shoplist?name=${localStorage.getItem('item')}&user=${localStorage.getItem('username')}`, true);
+							xhr.open('GET', `https://kracked.onrender.com/shoplist?name=${localStorage.getItem('item')}&user=${localStorage.getItem('username')}`, true);
 							xhr.onload = function (res) {
 							  if (xhr.status == 200) {
 								// redirect to a page
