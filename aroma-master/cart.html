@@ -30,7 +30,8 @@ var xh2 = new XMLHttpRequest();
   xh2.open("GET", `https://kracked.onrender.com/points?user=${localStorage.getItem('username')}`, true);
   xh2.onload = function (res) {
     if (xh2.status == 200) {
-      // redirect to a page
+      // redirect to a 
+      window.alert("done loading")
      var points=xh2.response
      document.getElementById("mail").innerHTML+=` <li class="nav-item"><a class="nav-link"  href="#">points:${points}</a></li>`
 
