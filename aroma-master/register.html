@@ -120,7 +120,7 @@
 								<input type="text" required class="form-control" id="name" name="name" placeholder="Username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Username'">
 							</div>
 							<div class="col-md-12 form-group">
-								<input type="text"required class="form-control" id="email" name="email" placeholder="Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address'">
+								<input type="text"required class="form-control" id="email2" name="email" placeholder="Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address'">
               </div>
               <div class="col-md-12 form-group">
 								<input type="text" class="form-control"required id="password" name="password" placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'">
@@ -258,7 +258,7 @@ function submitForm(event) {
 	  event.preventDefault()
   
   var xhr = new XMLHttpRequest();
-  xhr.open("GET", `https://kracked.onrender.com/register?email=${document.getElementById('email').value}&password=${document.getElementById('password').value}`, true);
+  xhr.open("GET", `https://kracked.onrender.com/register?email=${document.getElementById('email2').value}&password=${document.getElementById('password').value}`, true);
   xhr.onload = function () {
     if (xhr.status == 200) {
       // redirect to a page
