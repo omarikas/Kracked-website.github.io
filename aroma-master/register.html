@@ -262,8 +262,9 @@ function submitForm(event) {
   xhr.onload = function () {
     if (xhr.status == 200) {
       // redirect to a page
-      window.location.href = "index.html";
 	  localStorage.setItem("username",document.getElementById('name').value)
+      window.location.href = "index.html";
+	
     } else {
       // go to the same page and make a pop up
       window.location.reload();
