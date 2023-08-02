@@ -263,6 +263,7 @@ function submitForm(event) {
     if (xhr.status == 200) {
       // redirect to a page
       window.location.href = "index.html";
+	  localStorage.setItem("username",document.getElementById('name').value)
     } else {
       // go to the same page and make a pop up
       window.location.reload();
